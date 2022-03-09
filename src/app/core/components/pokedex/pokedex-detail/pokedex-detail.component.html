@@ -1,0 +1,58 @@
+<p><a href="#" (click)="backButtonClicked()">Back {{selectedID}}</a></p>
+<div class="row" *ngIf="pokemon">
+    <div class="col-sm-3">
+        <div class="row">
+            <h1>{{ pokemon!.name.toUpperCase() }}</h1>
+            <img class="center" [src]="pokemon!.imageurl" height="251" width="251" alt="">
+        </div>
+        <div class="row" style="text-align:center; color:white;">
+            <h3>Type</h3>
+            <div>
+                <span *ngIf="pokemon!.types.includes('Normal')" class="pokeType">Normal</span>
+                <span *ngIf="pokemon!.types.includes('Fighting')" class="pokeType">Fighting</span>
+                <span *ngIf="pokemon!.types.includes('Flying')" class="pokeType">Flying</span>
+                <span *ngIf="pokemon!.types.includes('Poison')" class="pokeType">Poison</span>
+                <span *ngIf="pokemon!.types.includes('Ground')" class="pokeType">Ground</span>
+                <span *ngIf="pokemon!.types.includes('Rock')" class="pokeType">Rock</span>
+                <span *ngIf="pokemon!.types.includes('Bug')" class="pokeType">Bug</span>
+                <span *ngIf="pokemon!.types.includes('Ghost')" class="pokeType">Ghost</span>
+                <span *ngIf="pokemon!.types.includes('Steel')" class="pokeType">Steel</span>
+                <span *ngIf="pokemon!.types.includes('Fire')" class="pokeType">Fire</span>
+                <span *ngIf="pokemon!.types.includes('Water')" class="pokeType">Water</span>
+                <span *ngIf="pokemon!.types.includes('Grass')" class="pokeType">Grass</span>
+                <span *ngIf="pokemon!.types.includes('Electric')" class="pokeType">Electric</span>
+                <span *ngIf="pokemon!.types.includes('Psychic')" class="pokeType">Psychic</span>
+                <span *ngIf="pokemon!.types.includes('Ice')" class="pokeType">Ice</span>
+                <span *ngIf="pokemon!.types.includes('Dragon')" class="pokeType">Dragon</span>
+                <span *ngIf="pokemon!.types.includes('Dark')" class="pokeType">Dark</span>
+                <span *ngIf="pokemon!.types.includes('Fairy')" class="pokeType">Fairy</span>
+            </div>
+        </div>
+        <div class="row" style="height: 10px;"></div>
+        <div class="row" style="text-align:center; color:white;">
+            <h3>Abilities</h3>
+            <span>{{pokemon!.abilities[0]}}</span>
+        </div>
+        <div class="row" style="text-align:center; color:white;">
+            <h3>Weaknesses</h3>
+        </div>
+    </div>
+    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+        <div class="row">
+            <div class="col">
+                <select (change)="pokeDexVersionChange($event)" class="form-select">
+                    <option *ngFor="let pokeDex of pokemon!.description">{{pokeDex.version}}</option>
+                </select>
+                <br />
+                <p class="entry">{{ selectedPokedex?.entry }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <app-poke-stats [statsArray]="getStatArray()"></app-poke-stats>
+        </div> 
+    </div>
+</div>
+<div class="row" *ngIf="!pokemon">
+    Pokemon Not Found
+</div>
+

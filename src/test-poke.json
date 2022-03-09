@@ -1,0 +1,1894 @@
+{
+    "pokemons":[
+      {
+        "name": "Bulbasaur",
+        "id": "#001",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pok\u00e9mon"
+          },
+          {
+            "version": "Blue",
+            "entry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pok\u00e9mon"
+          },
+          {
+            "version": "Yellow",
+            "entry": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+          },
+          {
+            "version": "Gold",
+            "entry": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows."
+          },
+          {
+            "version": "Silver",
+            "entry": "It carries a seed on its back right from birth. As it grows older, the seed also grows larger."
+          },
+          {
+            "version": "Crystal",
+            "entry": "While it is young, it uses the nutrients that are stored in the seeds on its back in order to grow."
+          },
+          {
+            "version": "Ruby",
+            "entry": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+          },
+          {
+            "version": "Sapphire",
+            "entry": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+          },
+          {
+            "version": "Emerald",
+            "entry": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+          },
+          {
+            "version": "FireRed",
+            "entry": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
+          },
+          {
+            "version": "LeafGreen",
+            "entry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
+          },
+          {
+            "version": "Diamond",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "Pearl",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "Platinum",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "HeartGold",
+            "entry": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows."
+          },
+          {
+            "version": "SoulSilver",
+            "entry": "It carries a seed on its back right from birth. As it grows older, the seed also grows larger."
+          },
+          {
+            "version": "Black",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "White",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "Black2",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "White2",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "X",
+            "entry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
+          },{
+            "version": "Y",
+            "entry": "For some time after its birth, it grows by gaining nourishment from the seed on its back."
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+          },
+          {
+            "version": "Sword",
+            "entry": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
+          },
+          {
+            "version": "Shield",
+            "entry": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow."
+          }
+          ,
+          {
+            "version": "BrilliantDiamond",
+            "entry": "For some time after its birth, it grows by taking nourishment from the seed on its back."
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": "For some time after its birth, it grows by taking nourishment from the seed on its back."
+          }
+    
+        ],
+        "height": "2' 04\"",
+        "category": "Seed",
+        "weight": "15.2 lbs",
+        "type": ["Grass", "Poison"],
+        "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
+        "evolutions": ["#001", "#002", "#003"],
+        "abilities": ["Overgrow"],
+        "hp": 20,
+        "attack": 30,
+        "defense": 20,
+        "special_attack": 30,
+        "special_defense": 30,
+        "speed": 30,
+        "total": 160,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":["Friend Safari (Grass)"]},
+          {"game": "Y", "location":["Friend Safari (Grass)"]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":["Viridian Forest"]},
+          {"game": "LetsGoEevee", "location":["Viridian Forest"]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":["UG-Grassland Caves", "UG-Sunlit Cavern", "UG-Riverbank Caves", "UG-Still-Water Cavern"]},
+          {"game": "ShiningPearl", "location":["UG-Grassland Caves", "UG-Sunlit Cavern", "UG-Riverbank Caves", "UG-Still-Water Cavern"]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "5140-5396",
+        "egg_groups": "Grass, Monster",
+        "evolvedfrom": "",
+        "evolution_cause": "",
+        "base_exp": "64",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 1},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Ivysaur",
+        "id": "#002",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+          },
+          {
+            "version": "Blue",
+            "entry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+          },
+          {
+            "version": "Yellow",
+            "entry": "The bulb on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+          },
+          {
+            "version": "Gold",
+            "entry": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+          },
+          {
+            "version": "Silver",
+            "entry": "If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom."
+          },
+          {
+            "version": "Crystal",
+            "entry": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms."
+          },
+          {
+            "version": "Ruby",
+            "entry": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon."
+          },
+          {
+            "version": "Sapphire",
+            "entry": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon."
+          },
+          {
+            "version": "Emerald",
+            "entry": "To support its bulb, Ivysaur's legs grow sturdy. If it spends more time lying in the sunlight, the bud will soon bloom into a large flower."
+          },
+          {
+            "version": "FireRed",
+            "entry": "There is a plant bulb on its back. When it absorbs nutrients, the bulb is said to blossom into a large flower."
+          },
+          {
+            "version": "LeafGreen",
+            "entry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+          },
+          {
+            "version": "Diamond",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "Pearl",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "Platinum",
+            "entry": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+          },
+          {
+            "version": "HeartGold",
+            "entry": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+          },
+          {
+            "version": "SoulSilver",
+            "entry": "If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom."
+          },
+          {
+            "version": "Black",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "White",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "Black2",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "White2",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "X",
+            "entry": "There is a plant bulb on its back. When it absorbs nutrients, the bulb is said to blossom into a large flower."
+          },{
+            "version": "Y",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong."
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": "If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon"
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+          },
+          {
+            "version": "Sword",
+            "entry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+          },
+          {
+            "version": "Shield",
+            "entry": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+          }
+    
+        ],
+        "height": "3' 03\"",
+        "category": "Seed",
+        "weight": "28.7 lbs",
+        "type": ["Grass", "Poison"],
+        "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
+        "evolutions": ["#001", "#002", "#003"],
+        "abilities": ["Overgrow"],
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "special_attack": 40,
+        "special_defense": 30,
+        "speed": 30,
+        "total": 190,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":["Friend Safari (Grass)"]},
+          {"game": "Y", "location":["Friend Safari (Grass)"]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "egg_groups": "Grass, Monster",
+        "hatch_time" : "5140-5396",
+        "evolvedfrom": "#001",
+        "evolution_cause": "(Level 16)",
+        "base_exp": "142",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 1},
+          {"stat": "SpecialDefense", "ev_value": 1},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Venusaur",
+        "id": "#003",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+         "height": "6' 07\"",
+        "category": "Seed",
+        "weight": "220.5 lbs",
+        "type": ["Grass", "Poison"],
+        "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
+        "evolutions": ["#001", "#002", "#003"],
+        "abilities": ["Overgrow"],
+        "hp": 30,
+        "attack": 40,
+        "defense": 40,
+        "special_attack": 50,
+        "special_defense": 40,
+        "speed": 40,
+        "total": 240,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "egg_groups": "Grass, Monster",
+        "evolvedfrom": "#002",
+        "evolution_cause": "(Level 32)",
+        "base_exp": "236",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 2},
+          {"stat": "SpecialDefense", "ev_value": 1},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Charmander",
+        "id": "#004",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
+          },
+          {
+            "version": "Blue",
+            "entry": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
+          },
+          {
+            "version": "Yellow",
+            "entry": "The flame at the tip of its tail makes a sound as it burns. You can only hear it in quiet places."
+          },
+          {
+            "version": "Gold",
+            "entry": "The flame on its tail shows the strength of its life force. If it is weak, the flame also burns weakly."
+          },
+          {
+            "version": "Silver",
+            "entry": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly."
+          },
+          {
+            "version": "Crystal",
+            "entry": "If it's healthy, the flame on the tip of its tail will burn vigorously, even if it gets a bit wet."
+          },
+          {
+            "version": "Ruby",
+            "entry": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely."
+          },
+          {
+            "version": "Sapphire",
+            "entry": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely."
+          },
+          {
+            "version": "Emerald",
+            "entry": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is happy, and blazes when it is enraged."
+          },
+          {
+            "version": "FireRed",
+            "entry": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out."
+          },
+          {
+            "version": "LeafGreen",
+            "entry": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
+          },
+          {
+            "version": "Diamond",
+            "entry": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely."
+          },
+          {
+            "version": "Pearl",
+            "entry": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely."
+          },
+          {
+            "version": "Platinum",
+            "entry": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely."
+          },
+          {
+            "version": "HeartGold",
+            "entry": "The flame on its tail shows the strength of its life force. If it is weak, the flame also burns weakly."
+          },
+          {
+            "version": "SoulSilver",
+            "entry": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly."
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "2' 00\"",
+        "category": "Lizard",
+        "weight": "18.7 lbs",
+        "type": ["Fire"],
+        "weaknesses": ["Ground", "Rock", "Water"],
+        "evolutions": ["#004", "#005", "#006"],
+        "abilities": ["Blaze", "Solar Power"],
+        "hp": 20,
+        "attack": 30,
+        "defense": 20,
+        "special_attack": 30,
+        "special_defense": 20,
+        "speed": 40,
+        "total": 160,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":["Route 3", "Route 4", "Rock Tunnel"]},
+          {"game": "LetsGoEevee", "location":["Route 3", "Route 4", "Rock Tunnel"]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":["UG-Sandsear Caves", "UG-Typhlo Cavern", "UG-Volcanic Caves"]},
+          {"game": "ShiningPearl", "location":["UG-Sandsear Caves", "UG-Typhlo Cavern", "UG-Volcanic Caves"]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Dragon, Monster",
+        "evolvedfrom": "",
+        "evolution_cause": "",
+        "base_exp": "62",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 0},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 1}
+        ]
+      },
+      {
+        "name": "Charmeleon",
+        "id": "#005",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "3' 07\"",
+        "category": "Flame",
+        "weight": "41.9 lbs",
+        "type": ["Fire"],
+        "weaknesses": ["Ground", "Rock", "Water"],
+        "evolutions": ["#004", "#005", "#006"],
+        "abilities": ["Blaze", "Solar Power"],
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "special_attack": 40,
+        "special_defense": 30,
+        "speed": 40,
+        "total": 200,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":["Friend Safari (Fire)"]},
+          {"game": "Y", "location":["Friend Safari (Fire)"]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Dragon, Monster",
+        "evolvedfrom": "#004",
+        "evolution_cause": "(Level 16)",
+        "base_exp": "142",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 1},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 1}
+        ]
+      },
+      {
+        "name": "Charizard",
+        "id": "#006",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "5' 07\"",
+        "category": "Flame",
+        "weight": "199.5 lbs",
+        "type": ["Fire", "Flying"],
+        "weaknesses": ["Rock", "Electric", "Water"],
+        "evolutions": ["#004", "#005", "#006"],
+        "abilities": ["Blaze", "Solar Power"],
+        "hp": 30,
+        "attack": 40,
+        "defense": 30,
+        "special_attack": 50,
+        "special_defense": 40,
+        "speed": 50,
+        "total": 240,
+        "catch_rate":45,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Dragon, Monster",
+        "evolvedfrom": "#005",
+        "evolution_cause": "(Level 36)",
+        "base_exp": "240",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 0},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Squirtle",
+        "id": "#007",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "1' 08\"",
+        "category": "Tiny Turtle",
+        "weight": "19.8 lbs",
+        "type": ["Water"],
+        "weaknesses": ["Electric", "Grass"],
+        "evolutions": ["#007", "#008", "#009"],
+        "abilities": ["Torrent"],
+        "hp": 20,
+        "attack": 30,
+        "defense": 30,
+        "special_attack": 20,
+        "special_defense": 30,
+        "speed": 20,
+        "total": 150,
+        "catch_rate":0,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Monster, Water1 ",
+        "evolvedfrom": "",
+        "evolution_cause": "",
+        "base_exp": "63",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 0},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Wartortle",
+        "id": "#008",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "3' 03\"",
+        "category": "Turtle",
+        "weight": "49.6 lbs",
+        "type": ["Water"],
+        "weaknesses": ["Electric", "Grass"],
+        "evolutions": ["#007", "#008", "#009"],
+        "abilities": ["Torrent"],
+        "hp": 30,
+        "attack": 30,
+        "defense": 40,
+        "special_attack": 30,
+        "special_defense": 30,
+        "speed": 30,
+        "total": 190,
+        "catch_rate":0,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Monster, Water1 ",
+        "evolvedfrom": "#007",
+        "evolution_cause": "(Level 16)",
+        "base_exp": "142",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 0},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      },
+      {
+        "name": "Blastoise",
+        "id": "#009",
+        "imageurl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+        "description":[
+          {
+            "version": "Red",
+            "entry": ""
+          },
+          {
+            "version": "Blue",
+            "entry": ""
+          },
+          {
+            "version": "Yellow",
+            "entry": ""
+          },
+          {
+            "version": "Gold",
+            "entry": ""
+          },
+          {
+            "version": "Silver",
+            "entry": ""
+          },
+          {
+            "version": "Crystal",
+            "entry": ""
+          },
+          {
+            "version": "Ruby",
+            "entry": ""
+          },
+          {
+            "version": "Sapphire",
+            "entry": ""
+          },
+          {
+            "version": "Emerald",
+            "entry": ""
+          },
+          {
+            "version": "FireRed",
+            "entry": ""
+          },
+          {
+            "version": "LeafGreen",
+            "entry": ""
+          },
+          {
+            "version": "Diamond",
+            "entry": ""
+          },
+          {
+            "version": "Pearl",
+            "entry": ""
+          },
+          {
+            "version": "Platinum",
+            "entry": ""
+          },
+          {
+            "version": "HeartGold",
+            "entry": ""
+          },
+          {
+            "version": "SoulSilver",
+            "entry": ""
+          },
+          {
+            "version": "Black",
+            "entry": ""
+          },
+          {
+            "version": "White",
+            "entry": ""
+          },
+          {
+            "version": "Black2",
+            "entry": ""
+          },
+          {
+            "version": "White2",
+            "entry": ""
+          },
+          {
+            "version": "X",
+            "entry": ""
+          },{
+            "version": "Y",
+            "entry": ""
+          },
+          {
+            "version": "OmegaRuby",
+            "entry": ""
+          },
+          {
+            "version": "AlphaSapphire",
+            "entry": ""
+          },
+          {
+            "version": "Sun",
+            "entry": ""
+          },
+          {
+            "version": "Moon",
+            "entry": ""
+          },
+          {
+            "version": "UltraSun",
+            "entry": ""
+          },
+          {
+            "version": "UltraMoon",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoEevee",
+            "entry": ""
+          },
+          {
+            "version": "LetsGoPikachu",
+            "entry": ""
+          },
+          {
+            "version": "Sword",
+            "entry": ""
+          },
+          {
+            "version": "Shield",
+            "entry": ""
+          },
+          {
+            "version": "BrilliantDiamond",
+            "entry": ""
+          },
+          {
+            "version": "ShiningPearl",
+            "entry": ""
+          }
+    
+        ],
+        "height": "5' 03\"",
+        "category": "Shellfish",
+        "weight": "188.5 lbs",
+        "type": ["Water"],
+        "weaknesses": ["Electric", "Grass"],
+        "evolutions": ["#007", "#008", "#009"],
+        "abilities": ["Torrent"],
+        "hp": 30,
+        "attack": 40,
+        "defense": 40,
+        "special_attack": 40,
+        "special_defense": 40,
+        "speed": 40,
+        "total": 230,
+        "catch_rate":0,
+        "catch_location":[
+          {"game": "Red", "location":[]},
+          {"game": "Blue", "location":[]},
+          {"game": "Yellow", "location":[]},
+          {"game": "Gold", "location":[]},
+          {"game": "Silver", "location":[]},
+          {"game": "Crystal", "location":[]},
+          {"game": "Ruby", "location":[]},
+          {"game": "Sapphire", "location":[]},
+          {"game": "Emerald", "location":[]},
+          {"game": "FireRed", "location":[]},
+          {"game": "LeafGreen", "location":[]},
+          {"game": "Diamond", "location":[]},
+          {"game": "Pearl", "location":[]},
+          {"game": "Platinum", "location":[]},
+          {"game": "HeartGold", "location":[]},
+          {"game": "SoulSilver", "location":[]},
+          {"game": "Black", "location":[]},
+          {"game": "White", "location":[]},
+          {"game": "Black2", "location":[]},
+          {"game": "White2", "location":[]},
+          {"game": "X", "location":[]},
+          {"game": "Y", "location":[]},
+          {"game": "OmegaRuby", "location":[]},
+          {"game": "AlphaSapphire", "location":[]},
+          {"game": "Sun", "location":[]},
+          {"game": "Moon", "location":[]},
+          {"game": "UltraSun", "location":[]},
+          {"game": "UltraMoon", "location":[]},
+          {"game": "LetsGoPikachu", "location":[]},
+          {"game": "LetsGoEevee", "location":[]},
+          {"game": "Sword", "location":[]},
+          {"game": "Shield", "location":[]},
+          {"game": "BrilliantDiamond", "location":[]},
+          {"game": "ShiningPearl", "location":[]}
+        ],
+        "male_percentage": "87.5%",
+        "female_percentage": "12.5%",
+        "sexless": 0,
+        "hatch_time": "20 ",
+        "egg_groups": "Monster, Water1",
+        "evolvedfrom": "#008",
+        "evolution_cause": "(Level 36)",
+        "base_exp": "239",
+        "ev":[
+          {"stat": "Attack", "ev_value": 0},
+          {"stat": "Defense", "ev_value": 0},
+          {"stat": "HitPoint", "ev_value": 0},
+          {"stat": "SpecialAttack", "ev_value": 0},
+          {"stat": "SpecialDefense", "ev_value": 0},
+          {"stat": "Speed", "ev_value": 0}
+        ]
+      }
+    ]
+}

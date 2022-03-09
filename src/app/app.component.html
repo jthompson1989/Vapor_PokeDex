@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<div class="container-lg">
+  <router-outlet></router-outlet>
+  <!-- <app-pokedex></app-pokedex> -->
+</div>
+<footer class="bg-dark">
+  <mat-toolbar class="toolbarNav">
+    <button mat-flat-button routerLink="/pokemons" routerLinkActive="active-link">
+      <mat-icon class="material-icons color_blue">home</mat-icon>
+      <span>PokeDex</span>
+    </button>
+    <button mat-flat-button routerLink="/iv" routerLinkActive="active-link">
+      <mat-icon class="material-icons color_blue">score</mat-icon>
+      <span>IV Trainer</span>
+    </button>
+    <button mat-flat-button routerLink="/team" routerLinkActive="active-link">
+      <mat-icon class="material-icons color_blue">build</mat-icon>
+      <span>Team Builder</span>
+    </button>
+    <button mat-flat-button routerLink="/settings" routerLinkActive="active-link">
+      <mat-icon class="material-icons color_blue">settings</mat-icon>
+      <span>Settings</span>
+    </button>
+  </mat-toolbar>
+</footer>
