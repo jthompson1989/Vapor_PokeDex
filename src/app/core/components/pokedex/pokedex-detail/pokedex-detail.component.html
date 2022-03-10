@@ -1,11 +1,11 @@
 <p><a routerLink="../../pokemons">Back {{selectedID}}</a></p>
 <div class="row" *ngIf="pokemon">
     <div class="col-sm-3">
-        <div class="row">
+        <div class="row justify-content-center">
             <h1>{{ pokemon!.name.toUpperCase() }}</h1>
             <img class="center" [src]="pokemon!.imageurl" height="251" width="251" alt="">
         </div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Type</h3>
             <div>
                 <span *ngIf="pokemon!.type.includes('Normal')" class="pokeType">Normal</span>
@@ -28,17 +28,17 @@
                 <span *ngIf="pokemon!.type.includes('Fairy')" class="pokeType">Fairy</span>
             </div>
         </div>
-        <div class="row" style="height: 10px;"></div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="height: 10px;"></div>
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Abilities</h3>
             <span>{{pokemon!.abilities[0]}}</span>
         </div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Weaknesses</h3>
         </div>
     </div>
     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col">
                 <select (change)="pokeDexVersionChange($event)" class="form-select">
                     <option *ngFor="let pokeDex of pokemon!.description">{{pokeDex.version}}</option>
@@ -47,9 +47,12 @@
                 <p class="entry">{{ selectedPokedex?.entry }}</p>
             </div>
         </div>
-        <div class="row">
-            <app-poke-stats [statsArray]="getStatArray()"></app-poke-stats>
+        <div class="row justify-content-center">
+            <app-poke-stats [selectedID]="selectedID"></app-poke-stats>
         </div> 
+        <div class="row justify-content-center">
+            <app-poke-evolutions [evolutionChain] = "getEvolutionChain()"></app-poke-evolutions>
+        </div>
     </div>
 </div>
 <div class="row" *ngIf="!pokemon">

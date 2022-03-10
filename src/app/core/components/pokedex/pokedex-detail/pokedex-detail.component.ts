@@ -14,6 +14,7 @@ export class PokedexDetailComponent implements OnInit {
 
   selectedPokedex:PokeDex | undefined;
   selectedID: string | undefined;
+  statsArray: number[] = [];
 
   constructor(private route: ActivatedRoute,
     private pokemonService: PokemonService) { 
@@ -25,18 +26,19 @@ export class PokedexDetailComponent implements OnInit {
         this.selectedID = params["id"];
         this.pokemonService.setPokemon(this.selectedID!).subscribe((pokemon) => {
           this.pokemon = pokemon as Pokemon;
-          this.selectedPokedex = this.pokemonService.getRandomDexEntry(this.pokemon!);
+          this.selectedPokedex = this.pokemonService.getRandomDexEntry(this.selectedID!);
+          this.statsArray = this.pokemonService.getStatArray(this.selectedID!);
       });}
     );
     
   }
-  
+
   pokeDexVersionChange(event: Event):void{
     let index = (event.target as HTMLSelectElement).selectedIndex;
     this.selectedPokedex = this.pokemon!.description[index];
   }
 
-  getStatArray(){
-    return this.pokemonService.getStatArray(this.pokemon!);
+  getEvolutionChain(){
+    return this.pokemonService.getEvolutionChain(this.selectedID!);
   }
 }

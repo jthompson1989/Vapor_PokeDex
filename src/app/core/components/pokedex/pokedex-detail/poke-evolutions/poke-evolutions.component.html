@@ -1,1 +1,16 @@
-<p>poke-evolutions works!</p>
+<div class="row" style="color:white; text-align: center;">
+    <h3>Evolutions</h3>
+</div>
+<div class="row justify-content-center">
+    <div class="col-3" *ngFor="let pokemon of evolutionChain" [ngClass]="{'selectedPokemon': pokemon.id === selectedID}">
+        <div align="center">
+            <div>
+              <a [routerLink]="['../', pokemon.id]">{{pokemon.name}}</a>
+            </div>
+            <img [routerLink]="['../', pokemon.id]" [src]="pokemon.imageurl" height=100px; widht=100px; alt="">
+            <div>
+                <span>Evolve By: <br />{{pokemon.evolution_cause}}</span>
+            </div>
+        </div>  
+    </div>
+</div>

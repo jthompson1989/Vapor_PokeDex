@@ -28,6 +28,7 @@ import { SettingsComponent } from './core/components/settings/settings.component
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { NGIndexDBModule } from './ng-index.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -56,7 +57,13 @@ import { NGIndexDBModule } from './ng-index.module';
     NgChartsModule,
     AppRoutingModule,
     NGIndexDBModule,
-    AngularFirestoreModule.enablePersistence()
+    AngularFirestoreModule.enablePersistence(),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

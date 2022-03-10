@@ -1,0 +1,15 @@
+span{
+    color:white;
+}
+
+.selectedPokemon
+{
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightslategray;
+}
+
+
+.center {
+      align-items: center;
+      justify-content: center;  
+  }

@@ -37,17 +37,24 @@ export class PokemonService{
         });
     }
 
-    getRandomDexEntry(pokemon: Pokemon): PokeDex{
+    getRandomDexEntry(id: string): PokeDex{
+        let pokemon = this.getPokemonData(id);
         let index = Math.floor(Math.random() * pokemon.description.length);
         if(pokemon.description[index] !== undefined && pokemon.description[index].entry !== ""){
             return pokemon.description[index];
         }
         else{
-            return this.getRandomDexEntry(pokemon);
+          try{
+            return pokemon.description.filter(pokeDex => pokeDex.entry !=="")[0];
+          }
+          catch(err){
+            return pokemon.description[0];
+          }
         }
       }
     
-      getStatArray(pokemon: Pokemon){
+      getStatArray(id: string){
+        let pokemon = this.getPokemonData(id);
         return [pokemon.hp, 
                 pokemon.attack, 
                 pokemon.defense, 
@@ -57,19 +64,35 @@ export class PokemonService{
       }
 
       getPokemonList(){
-        this.dbService.getAll('pokemons').subscribe((pokemons) => {
-          console.log(pokemons);
-          this.pokemonList = []
-          for(let x = 0; x < pokemons.length; x++){
-              this.pokemonList.push(this.convertToPokemon(pokemons[x]));
-          }
-          console.log("Pokemon Array:" + this.pokemonList);
-        });
-        return this.pokemonList;
+        return this.dbService.getAll('pokemons');
+        // this.dbService.getAll('pokemons').subscribe((pokemons) => {
+        //   console.log(pokemons);
+        //   this.pokemonList = []
+        //   for(let x = 0; x < pokemons.length; x++){
+        //       this.pokemonList.push(this.convertToPokemon(pokemons[x]));
+        //   }
+        //   console.log("Pokemon Array:" + this.pokemonList);
+        // });
+        // return this.pokemonList;
       }
 
       getPokemonData(id: string){
         return this.pokemonList.filter(poke => poke.id === id)[0];
+      }
+
+      getPokemonDataObs(id: string) : Observable<Pokemon>{
+        return this.dbService.getByID("pokemons", id);
+      }
+
+      getEvolutionChain(id: string){
+        let pokemonEvolutions : Pokemon[] = []
+        let pokemon = this.getPokemonData(id);
+        if(pokemon.evolutions){
+          for(let x = 0; x < pokemon.evolutions.length; x++){
+            pokemonEvolutions.push(this.getPokemonData(pokemon.evolutions[x]));
+          }
+        }
+        return pokemonEvolutions;
       }
 
       setPokemon(pokeID: string){
