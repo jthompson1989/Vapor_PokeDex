@@ -10,12 +10,10 @@ import { PokemonService } from 'src/app/core/services/pokemon.service';
   styleUrls: ['./pokedex-detail.component.css']
 })
 export class PokedexDetailComponent implements OnInit {
-  @Output() backButtonClick = new EventEmitter<void>();
   pokemon: Pokemon | undefined;
-  @Input('PokeID') pokemonID: string = "";
 
   selectedPokedex:PokeDex | undefined;
-  selectedID: String | undefined;
+  selectedID: string | undefined;
 
   constructor(private route: ActivatedRoute,
     private pokemonService: PokemonService) { 
@@ -23,28 +21,22 @@ export class PokedexDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(
-      (params) => {this.selectedID = params["id"]}
+      (params) => {
+        this.selectedID = params["id"];
+        this.pokemonService.setPokemon(this.selectedID!).subscribe((pokemon) => {
+          this.pokemon = pokemon as Pokemon;
+          this.selectedPokedex = this.pokemonService.getRandomDexEntry(this.pokemon!);
+      });}
     );
-    //this.pokemon = this.pokemonService.getPokemonData(this.selectedID!);
-    this.pokemonService.setPokemon(this.selectedID!).subscribe((pokemon) => {
-      console.log(pokemon);
-      this.pokemon = pokemon as Pokemon;
-      this.pokemonService.selectedPokemon = this.pokemon;
-    });;
-    //this.pokemon = this.pokemonService.selectedPokemon!;
-    this.selectedPokedex = this.pokemonService.getRandomDexEntry();
+    
   }
-
-  backButtonClicked(){
-    this.backButtonClick.emit();
-  }
-
+  
   pokeDexVersionChange(event: Event):void{
     let index = (event.target as HTMLSelectElement).selectedIndex;
     this.selectedPokedex = this.pokemon!.description[index];
   }
 
   getStatArray(){
-    return this.pokemonService.getStatArray();
+    return this.pokemonService.getStatArray(this.pokemon!);
   }
 }

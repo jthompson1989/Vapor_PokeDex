@@ -10,7 +10,7 @@ export class Pokemon{
     public height: string = '';
     public category: string = '';
     public weight: string ='';
-    public types: string[] = [];
+    public type: string[] = [];
     public weaknesses: string[] = [];
     public evolutions: string[] = [];
     public abilities: string[] = [];

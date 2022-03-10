@@ -4,7 +4,7 @@ import { DBConfig, NgxIndexedDBModule } from "ngx-indexed-db";
 
 const dbConfig: DBConfig  = {
     name: 'VaporDexDB',
-    version: 3,
+    version: 4,
     objectStoresMeta: [{
       store: 'pokemons',
       storeConfig: { keyPath: 'id', autoIncrement: true },

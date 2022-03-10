@@ -12,7 +12,6 @@ import { Observable } from "rxjs";
   providedIn: 'root'
 })
 export class PokemonService{
-    public selectedPokemon: Pokemon | undefined;
     public pokemonList: Pokemon[] = [];
     private returnMsg: String = "";
     private database: Database | undefined;
@@ -38,23 +37,23 @@ export class PokemonService{
         });
     }
 
-    getRandomDexEntry(): PokeDex{
-        let index = Math.floor(Math.random() * this.selectedPokemon!.description.length);
-        if(this.selectedPokemon!.description[index] !== undefined && this.selectedPokemon!.description[index].entry !== ""){
-            return this.selectedPokemon!.description[index];
+    getRandomDexEntry(pokemon: Pokemon): PokeDex{
+        let index = Math.floor(Math.random() * pokemon.description.length);
+        if(pokemon.description[index] !== undefined && pokemon.description[index].entry !== ""){
+            return pokemon.description[index];
         }
         else{
-            return this.getRandomDexEntry();
+            return this.getRandomDexEntry(pokemon);
         }
       }
     
-      getStatArray(){
-        return [this.selectedPokemon!.hp, 
-                this.selectedPokemon!.attack, 
-                this.selectedPokemon!.defense, 
-                this.selectedPokemon!.speed, 
-                this.selectedPokemon!.special_attack, 
-                this.selectedPokemon!.special_defense];
+      getStatArray(pokemon: Pokemon){
+        return [pokemon.hp, 
+                pokemon.attack, 
+                pokemon.defense, 
+                pokemon.speed, 
+                pokemon.special_attack, 
+                pokemon.special_defense];
       }
 
       getPokemonList(){
@@ -69,12 +68,12 @@ export class PokemonService{
         return this.pokemonList;
       }
 
-      getPokemonData(id: String){
+      getPokemonData(id: string){
         return this.pokemonList.filter(poke => poke.id === id)[0];
       }
 
-      setPokemon(pokeID: String){
-        return this.dbService.getByKey('pokemons', pokeID as string);
+      setPokemon(pokeID: string){
+        return this.dbService.getByKey('pokemons', pokeID);
       }
 
       convertToPokemon(pokemon: any) : Pokemon{
