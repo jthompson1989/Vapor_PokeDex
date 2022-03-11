@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { NgChartsModule } from 'ng2-charts';
 import { PokeEvolutionsComponent } from './core/components/pokedex/pokedex-detail/poke-evolutions/poke-evolutions.component';
 import { PokedexComponent } from './core/components/pokedex/pokedex.component';
-import { IVTrainComponent } from './core/components/ivtrain/ivtrain.component';
+import { EVTrainComponent } from './core/components/evtrain/evtrain.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TeamBuilderComponent } from './core/components/team-builder/team-builder.component';
 import { SettingsComponent } from './core/components/settings/settings.component';
@@ -41,7 +41,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     PokeStatsComponent,
     PokeEvolutionsComponent,
     PokedexComponent,
-    IVTrainComponent,
+    EVTrainComponent,
     NotFoundComponent,
     TeamBuilderComponent,
     SettingsComponent
