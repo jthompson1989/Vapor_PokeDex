@@ -1,44 +1,47 @@
 <p><a routerLink="../../pokemons">Back {{selectedID}}</a></p>
 <div class="row" *ngIf="pokemon">
     <div class="col-sm-3">
-        <div class="row">
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h1>{{ pokemon!.name.toUpperCase() }}</h1>
             <img class="center" [src]="pokemon!.imageurl" height="251" width="251" alt="">
+            <span>{{pokemon!.height}} - {{pokemon!.weight}}</span>
         </div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Type</h3>
             <div>
-                <span *ngIf="pokemon!.type.includes('Normal')" class="pokeType">Normal</span>
-                <span *ngIf="pokemon!.type.includes('Fighting')" class="pokeType">Fighting</span>
-                <span *ngIf="pokemon!.type.includes('Flying')" class="pokeType">Flying</span>
-                <span *ngIf="pokemon!.type.includes('Poison')" class="pokeType">Poison</span>
-                <span *ngIf="pokemon!.type.includes('Ground')" class="pokeType">Ground</span>
-                <span *ngIf="pokemon!.type.includes('Rock')" class="pokeType">Rock</span>
-                <span *ngIf="pokemon!.type.includes('Bug')" class="pokeType">Bug</span>
-                <span *ngIf="pokemon!.type.includes('Ghost')" class="pokeType">Ghost</span>
-                <span *ngIf="pokemon!.type.includes('Steel')" class="pokeType">Steel</span>
-                <span *ngIf="pokemon!.type.includes('Fire')" class="pokeType">Fire</span>
-                <span *ngIf="pokemon!.type.includes('Water')" class="pokeType">Water</span>
-                <span *ngIf="pokemon!.type.includes('Grass')" class="pokeType">Grass</span>
-                <span *ngIf="pokemon!.type.includes('Electric')" class="pokeType">Electric</span>
-                <span *ngIf="pokemon!.type.includes('Psychic')" class="pokeType">Psychic</span>
-                <span *ngIf="pokemon!.type.includes('Ice')" class="pokeType">Ice</span>
-                <span *ngIf="pokemon!.type.includes('Dragon')" class="pokeType">Dragon</span>
-                <span *ngIf="pokemon!.type.includes('Dark')" class="pokeType">Dark</span>
-                <span *ngIf="pokemon!.type.includes('Fairy')" class="pokeType">Fairy</span>
+                <img width=30%; *ngFor="let type of pokemon!.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'">
             </div>
         </div>
-        <div class="row" style="height: 10px;"></div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="height: 10px;"></div>
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Abilities</h3>
             <span>{{pokemon!.abilities[0]}}</span>
         </div>
-        <div class="row" style="text-align:center; color:white;">
+        <div class="row justify-content-center" style="height: 10px;"></div>
+        <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Weaknesses</h3>
+            <div *ngFor="let weakness of pokemon!.weaknesses">
+                <img width=30%; [src]="'../../assets/img/types/' + weakness.toLowerCase() + '.png'">
+            </div>
+        </div>
+        <div class="row justify-content-center" style="height: 10px;"></div>
+        <div class="row justify-content-center" style="text-align:center; color:white;">
+            <h3>EV Stats</h3>
+            <div *ngFor="let ev of pokemon!.ev">
+                <span><b>{{ev.stat}}:</b> {{ev.ev_value}}</span>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="height: 10px;"></div>
+        <div class="row justify-content-center" style="text-align:center; color:white;">
+            <h3>PokeEgg</h3>
+            <div>Egg Groups: {{pokemon!.egg_groups}}</div>
+            <div>Hatch Time: {{pokemon!.hatch_time}}</div>
+            <div>Male %: {{pokemon!.male_percentage}}</div>
+            <div>Female %: {{pokemon!.female_percentage}}</div>
         </div>
     </div>
     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col">
                 <select (change)="pokeDexVersionChange($event)" class="form-select">
                     <option *ngFor="let pokeDex of pokemon!.description">{{pokeDex.version}}</option>
@@ -47,9 +50,16 @@
                 <p class="entry">{{ selectedPokedex?.entry }}</p>
             </div>
         </div>
-        <div class="row">
-            <app-poke-stats [statsArray]="getStatArray()"></app-poke-stats>
+        <div class="row justify-content-center">
+            <app-poke-stats [selectedID]="selectedID"></app-poke-stats>
         </div> 
+        <div class="row justify-content-center">
+            <app-poke-evolutions [evolutionChain] = "getEvolutionChain()"></app-poke-evolutions>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <app-poke-catchrate [pokemon]="pokemon!"></app-poke-catchrate>
+        </div>
     </div>
 </div>
 <div class="row" *ngIf="!pokemon">

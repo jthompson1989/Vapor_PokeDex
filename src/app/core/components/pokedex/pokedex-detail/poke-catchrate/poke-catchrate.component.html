@@ -1,0 +1,43 @@
+<div class="row" style="color:white; text-align: center;">
+    <h3>Catch Rate</h3>
+</div>
+<div style="color:white;">
+    Status:
+    <input type="radio" [value]="2.5" [(ngModel)]="statusModifier" (ngModelChange)="statusChange($event)"> Frozen/Sleep
+    <input type="radio" [value]="1.5" [(ngModel)]="statusModifier" (ngModelChange)="statusChange($event)"> Poison/Paralysis/Burned
+    <input type="radio" [value]="1" [(ngModel)]="statusModifier" (ngModelChange)="statusChange($event)"> None
+</div>
+<div>
+    <span>Pokeball:</span> 
+    <select #pokeBallSelect class="form-select" [(ngModel)]="ballModifier" (ngModelChange)="pokeBallChange($event)">
+        <option selected [value]="1">PokéBall</option>
+        <option [value]="1.5">Great Ball</option>
+        <option [value]="2">Ultra Ball</option>
+        <option [value]="-1">Master Ball</option>
+        <option [value]="1.5">Safari Ball</option>
+        <option [value]="1">Net Ball</option>
+        <option [value]="3.5">Net Ball</option>
+        <option [value]="3.5">Dive Ball</option>
+        <option [value]="3">Repeat Ball</option>
+        <option [value]="1">Timer Ball</option>
+        <option [value]="1">Luxury Ball</option>
+        <option [value]="1">Premier Ball</option>
+        <option [value]="3">Dusk Ball</option>
+        <option [value]="1">Heal Ball</option>
+        <option [value]="4">Quick Ball</option>
+        <option [value]="1">Cherish Ball</option>
+        <option [value]="4">Dream Ball</option>
+        <option [value]="4">Fast Ball</option>
+        <option [value]="1">Friend Ball</option>
+        <option [value]="1">Heavy Ball</option>
+        <option [value]="1">Level Ball</option>
+        <option [value]="8">Love Ball</option>
+        <option [value]="3">Lure Ball</option>
+        <option [value]="3">Moon Ball</option>
+        <option [value]="1.5">Sport Ball</option>
+        <option [value]="5">Beast Ball</option>
+    </select>
+</div>
+<div>
+    <span>CatchRate: {{((catchValue/255)*100).toFixed(2)}}%</span>
+</div>

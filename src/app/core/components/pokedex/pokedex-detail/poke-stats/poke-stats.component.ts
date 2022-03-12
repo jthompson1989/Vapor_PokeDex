@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+import { PokemonService } from 'src/app/core/services/pokemon.service';
 
 
 @Component({
@@ -9,13 +10,27 @@ import { BaseChartDirective } from 'ng2-charts';
   styleUrls: ['./poke-stats.component.css']
 })
 export class PokeStatsComponent implements OnInit {
-  @Input() statsArray: number[] = [];
+  @Input() selectedID: string | undefined;
+  statsArray: number[] = [];
   @ViewChild(BaseChartDirective)
   chart!: BaseChartDirective;
-  constructor() { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
+ 
+  }
+
+  ngAfterContentInit(){
+   this.renderChart();
+  }
+
+  ngOnChanges(){
+    this.renderChart();
+  }
+
+  renderChart(){
     setTimeout(() => {
+      this.statsArray = this.pokemonService.getStatArray(this.selectedID!);
       this.chart!.chart!.data.datasets[0].data = this.statsArray;
       this.chart!.chart!.data.labels =  [ 'HitPoints: '+ this.statsArray[0], 
                             'Attack: '+ this.statsArray[1], 

@@ -21,13 +21,15 @@ import { FormsModule } from '@angular/forms';
 import { NgChartsModule } from 'ng2-charts';
 import { PokeEvolutionsComponent } from './core/components/pokedex/pokedex-detail/poke-evolutions/poke-evolutions.component';
 import { PokedexComponent } from './core/components/pokedex/pokedex.component';
-import { IVTrainComponent } from './core/components/ivtrain/ivtrain.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TeamBuilderComponent } from './core/components/team-builder/team-builder.component';
 import { SettingsComponent } from './core/components/settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { NGIndexDBModule } from './ng-index.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { PokeCatchrateComponent } from './core/components/pokedex/pokedex-detail/poke-catchrate/poke-catchrate.component';
+
 
 
 @NgModule({
@@ -40,10 +42,10 @@ import { NGIndexDBModule } from './ng-index.module';
     PokeStatsComponent,
     PokeEvolutionsComponent,
     PokedexComponent,
-    IVTrainComponent,
     NotFoundComponent,
     TeamBuilderComponent,
-    SettingsComponent
+    SettingsComponent,
+    PokeCatchrateComponent
   ],
   imports: [
     FormsModule,
@@ -56,7 +58,13 @@ import { NGIndexDBModule } from './ng-index.module';
     NgChartsModule,
     AppRoutingModule,
     NGIndexDBModule,
-    AngularFirestoreModule.enablePersistence()
+    AngularFirestoreModule.enablePersistence(),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

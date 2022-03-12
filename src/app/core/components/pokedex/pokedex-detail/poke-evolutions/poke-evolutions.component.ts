@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Pokemon } from 'src/app/core/models/pokemon.model';
 
 @Component({
   selector: 'app-poke-evolutions',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poke-evolutions.component.css']
 })
 export class PokeEvolutionsComponent implements OnInit {
-
-  constructor() { }
+   @Input() evolutionChain: Pokemon[] = [];
+  selectedID: string | undefined;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe(
+      (params) => {
+        this.selectedID = params["id"];
+      });
   }
 
 }

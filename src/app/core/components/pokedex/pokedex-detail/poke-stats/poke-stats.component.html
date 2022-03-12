@@ -1,11 +1,13 @@
-<div>
-    <div>
-      <div style="display: block" style="max-height:325px; max-width:325px;">
-        <canvas baseChart 
-          [data]="statChartData"
-          [options]="chartOptions"
-          [type]="chartType">
-        </canvas>
-      </div>
-    </div>
+
+<div class="row" style="color:white; text-align: center;">
+    <h3>Base Stats</h3>
+</div>
+<div class="row justify-content-center">
+  <div style="display: block" style="max-height:325px; max-width:325px;">
+    <canvas baseChart 
+      [data]="statChartData"
+      [options]="chartOptions"
+      [type]="chartType">
+    </canvas>
   </div>
+</div>

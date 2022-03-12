@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IVTrainComponent } from './ivtrain.component';
+import { PokeCatchrateComponent } from './poke-catchrate.component';
 
-describe('IVTrainComponent', () => {
-  let component: IVTrainComponent;
-  let fixture: ComponentFixture<IVTrainComponent>;
+describe('PokeCatchrateComponent', () => {
+  let component: PokeCatchrateComponent;
+  let fixture: ComponentFixture<PokeCatchrateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IVTrainComponent ]
+      declarations: [ PokeCatchrateComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IVTrainComponent);
+    fixture = TestBed.createComponent(PokeCatchrateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
