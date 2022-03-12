@@ -10,6 +10,7 @@ const routes: Routes = [
     {path: "", redirectTo: "/pokemons", pathMatch: "full"},
     {path: "pokemons", component: PokedexListComponent},
     {path: "pokemons/:id", component: PokedexDetailComponent},
+    {path: "pokemons/filters/:type", component: PokedexListComponent},
     {path: "team", component: TeamBuilderComponent},
     {path: "settings", component: SettingsComponent},
     {path: "404", component: NotFoundComponent},
