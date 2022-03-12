@@ -76,6 +76,19 @@ export class PokemonService{
         // return this.pokemonList;
       }
 
+      getPokemonFilterList(filter: string){
+        return this.dbService.getAllByIndex('pokemons', 'type', IDBKeyRange.only(["Grass", "Poison"]));
+        // this.dbService.getAll('pokemons').subscribe((pokemons) => {
+        //   console.log(pokemons);
+        //   this.pokemonList = []
+        //   for(let x = 0; x < pokemons.length; x++){
+        //       this.pokemonList.push(this.convertToPokemon(pokemons[x]));
+        //   }
+        //   console.log("Pokemon Array:" + this.pokemonList);
+        // });
+        // return this.pokemonList;
+      }
+
       getPokemonData(id: string){
         return this.pokemonList.filter(poke => poke.id === id)[0];
       }

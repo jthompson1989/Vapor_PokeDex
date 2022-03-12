@@ -9,7 +9,8 @@
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Type</h3>
             <div>
-                <img width=30%; *ngFor="let type of pokemon!.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'">
+                <img width=30%; *ngFor="let type of pokemon!.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'" 
+                [routerLink]="['../../pokemons/filters', type]">
             </div>
         </div>
         <div class="row justify-content-center" style="height: 10px;"></div>
@@ -21,7 +22,8 @@
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Weaknesses</h3>
             <div *ngFor="let weakness of pokemon!.weaknesses">
-                <img width=30%; [src]="'../../assets/img/types/' + weakness.toLowerCase() + '.png'">
+                <img width=30%; [src]="'../../assets/img/types/' + weakness.toLowerCase() + '.png'" 
+                [routerLink]="['../../pokemons/filters', weakness]">
             </div>
         </div>
         <div class="row justify-content-center" style="height: 10px;"></div>

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Inject, Output, EventEmitter } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PokeDex } from 'src/app/core/models/pokedex.model';
 import { Pokemon } from 'src/app/core/models/pokemon.model';
 import { PokemonService } from 'src/app/core/services/pokemon.service';
@@ -17,7 +17,8 @@ export class PokedexDetailComponent implements OnInit {
   statsArray: number[] = [];
 
   constructor(private route: ActivatedRoute,
-    private pokemonService: PokemonService) { 
+    private pokemonService: PokemonService,
+    private router: Router) { 
   }
 
   ngOnInit(): void {
