@@ -1,14 +1,31 @@
 <div style="text-align:right;">
-    <a href="/">Clear Filter</a>
+    <a href="/" class="btn btn-secondary">Clear Filter</a>
+    <div>
+        <mat-button-toggle-group name="gen" aria-label="Generation" value="all" (change)="onGenToggleChange($event)">
+            <mat-button-toggle value="all">All</mat-button-toggle>
+            <mat-button-toggle value="gen1">Gen 1</mat-button-toggle>
+            <mat-button-toggle value="gen2">Gen 2</mat-button-toggle>
+            <mat-button-toggle value="gen3">Gen 3</mat-button-toggle>
+            <mat-button-toggle value="gen4">Gen 4</mat-button-toggle>
+            <mat-button-toggle value="gen5">Gen 5</mat-button-toggle>
+            <mat-button-toggle value="gen6">Gen 6</mat-button-toggle>
+            <mat-button-toggle value="gen7">Gen 7</mat-button-toggle>
+            <mat-button-toggle value="gen8">Gen 8</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
 </div>
 <div class="md-form mb-3 input-group w-100">
     <input class="form-control searchbox" type="search" id="pokedexSearch" [(ngModel)]="pokeDexSearch" aria-label="Search" placeholder="Search Pokedex" mdbInput>
 </div>
 <div class="list-group">
     <a class="list-group-item list-group-item-action" 
-         *ngFor="let pokemon of pokemons | pokedexfilter:pokeDexSearch"
+         *ngFor="let pokemon of pokemons | pokedexfilter:pokeDexSearch 
+         | pokedexgenfilter: genFilter 
+         | pokedextypefilter: typeFilter"
          [routerLink]="['/pokemons', pokemon.id]">
-         {{ pokemon.name }}
-         <img [src]="pokemon.imageurl" height=50px; width=50px; />
+         <img [src]="pokemon.imageurl" align="left" height=50px; width=50px; />
+         <span style="padding-left:20px;">{{ pokemon.name }}</span>
+         <img height=20px; width=100px; *ngFor="let type of pokemon!.type.slice().reverse()" align="right"
+        [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'">
     </a>
 </div>

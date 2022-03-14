@@ -29,6 +29,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { NGIndexDBModule } from './ng-index.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { PokeCatchrateComponent } from './core/components/pokedex/pokedex-detail/poke-catchrate/poke-catchrate.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { PokeDexGenFilterPipe } from './shared/pipes/pokedexgenfilter.pipe';
+import { PokeDexTypeFilterPipe } from './shared/pipes/pokedextypefilter.pipe';
 
 
 
@@ -36,6 +39,8 @@ import { PokeCatchrateComponent } from './core/components/pokedex/pokedex-detail
   declarations: [
     AppComponent,
     PokeDexFilterPipe,
+    PokeDexGenFilterPipe,
+    PokeDexTypeFilterPipe,
     HeaderComponent,
     PokedexListComponent,
     PokedexDetailComponent,
@@ -54,6 +59,7 @@ import { PokeCatchrateComponent } from './core/components/pokedex/pokedex-detail
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
+    MatButtonToggleModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'VaporDex'),
     NgChartsModule,
     AppRoutingModule,
