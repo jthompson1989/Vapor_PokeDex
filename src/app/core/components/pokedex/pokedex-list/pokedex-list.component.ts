@@ -15,6 +15,7 @@ export class PokedexListComponent implements OnInit {
   pokemons:Pokemon[] = []
   pokeDexSearch: string = "";
   typeFilter: string = "";
+  genFilter: number[]=[];
 
   constructor(private router: Router, 
     private pokemonService: PokemonService,
@@ -31,12 +32,40 @@ export class PokedexListComponent implements OnInit {
           for(let x = 0; x < list.length; x++){
             this.pokemons.push(this.pokemonService.convertToPokemon(list[x]));
           }
-          if(this.typeFilter !== "" && this.typeFilter !== undefined)
-          {//TODO: Change this to filter from the indexed instead of selecting all and filtering the array
-            this.pokemons = this.pokemons.filter((poke) => {
-              return poke.type.includes(this.typeFilter)
-            })
-          }
       });
   }
+
+  onGenToggleChange(toggle: any){
+    switch(toggle.value){
+      case "gen1":
+        this.genFilter = [0,150];
+        break;
+      case "gen2":
+        this.genFilter = [151,250];
+        break;
+      case "gen3":
+        this.genFilter = [251,385];
+        break;
+      case "gen4":
+        this.genFilter = [386,492];
+        break;
+      case "gen5":
+        this.genFilter = [493,648];
+        break;
+      case "gen6":
+        this.genFilter = [649,720];
+        break;
+      case "gen7":
+        this.genFilter = [721,808];
+        break;
+      case "gen8":
+        this.genFilter = [809,904];
+        break;
+      case "all":
+        this.genFilter = [];
+        break;
+    }
+    
+  }
 }
+

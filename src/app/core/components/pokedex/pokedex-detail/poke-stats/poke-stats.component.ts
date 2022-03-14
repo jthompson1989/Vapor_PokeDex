@@ -54,7 +54,7 @@ export class PokeStatsComponent implements OnInit {
         display: false,
         beginAtZero: true,
         suggestedMin: 0,
-        suggestedMax: 170
+        suggestedMax: 255
       },
       r: {
         ticks:{

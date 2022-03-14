@@ -2,3 +2,6 @@
     border-bottom: 1px solid #d3d3d3 !important;
     color: lightgrey;
 }
+mat-button-toggle-group {
+    flex-wrap: wrap;
+  }
