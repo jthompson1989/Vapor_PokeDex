@@ -38,28 +38,28 @@ export class PokedexListComponent implements OnInit {
   onGenToggleChange(toggle: any){
     switch(toggle.value){
       case "gen1":
-        this.genFilter = [0,150];
+        this.genFilter = [1,151];
         break;
       case "gen2":
-        this.genFilter = [151,250];
+        this.genFilter = [152,251];
         break;
       case "gen3":
-        this.genFilter = [251,385];
+        this.genFilter = [252,386];
         break;
       case "gen4":
-        this.genFilter = [386,492];
+        this.genFilter = [387,493];
         break;
       case "gen5":
-        this.genFilter = [493,648];
+        this.genFilter = [494,649];
         break;
       case "gen6":
-        this.genFilter = [649,720];
+        this.genFilter = [650,721];
         break;
       case "gen7":
-        this.genFilter = [721,808];
+        this.genFilter = [722,809];
         break;
       case "gen8":
-        this.genFilter = [809,904];
+        this.genFilter = [810,905];
         break;
       case "all":
         this.genFilter = [];
