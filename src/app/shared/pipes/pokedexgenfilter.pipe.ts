@@ -11,6 +11,19 @@ export class PokeDexGenFilterPipe implements PipeTransform {
         if (!items || !filter || filter.length === 0) {
             return items;
         }
-        return items.slice(filter[0], filter[1]);
+        try{
+            return items.filter((item) => {
+                let id : number = +item.id;
+                if(id >= filter[0] && id <= filter[1]){
+                    return item;
+                }else{
+                    return;
+                }
+            });
+        }
+        catch(err){
+            console.log("PokeDexGenFilterPipe failed: " + err);
+            return items;
+        }
     }
 }
