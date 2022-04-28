@@ -23,7 +23,7 @@
          | pokedexgenfilter: genFilter 
          | pokedextypefilter: typeFilter"
          [routerLink]="['/pokemons', pokemon.id]">
-         <img [src]="pokemon.imageurl" align="left" height=50px; width=50px; />
+         <img [src]="'../../assets/img/pokemons/' + pokemon.id + '.png'" align="left" height=50px; width=50px; />
          <span style="padding-left:20px;">{{ pokemon.name }}</span>
          <img height=20px; width=100px; *ngFor="let type of pokemon!.type.slice().reverse()" align="right"
         [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'">
