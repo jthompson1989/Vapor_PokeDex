@@ -5,14 +5,16 @@ import { PokemonService } from '../../services/pokemon.service';
 @Component({
   selector: 'app-pokedex',
   templateUrl: './pokedex.component.html',
-  styleUrls: ['./pokedex.component.css'],
-  providers: [PokemonService]
+  styleUrls: ['./pokedex.component.css']
 })
 export class PokedexComponent implements OnInit {
   selectedPokemon: Pokemon | undefined;
-  constructor(private pokemonService: PokemonService) { }
+  constructor(private pokemonService: PokemonService) { 
+    let x=0;
+  }
 
   ngOnInit(): void {
+    let x = 0;
   }
 
   pokemonSelected(pokemon: Pokemon){

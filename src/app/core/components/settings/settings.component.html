@@ -1,11 +1,14 @@
 <div class="list-group">
-    <a class="list-group-item list-group-item-action" >
-        Save Data
-    <a>
-        <a class="list-group-item list-group-item-action" >
-            Clear Data
-        <a>
-            <a class="list-group-item list-group-item-action" >
-                Refreshn ata
-            <a>
+    <a class="list-group-item list-group-item-action" (click)="onDownloadTeamData($event)">
+        Download Team-Builder Data
+    </a>
+    <a class="list-group-item list-group-item-action" (click)="onClearData($event)">
+        Clear Data
+    </a>
+    <a class="list-group-item list-group-item-action" (click)="onRefreshData($event)">
+        Refresh Data
+    </a>
+    <a class="list-group-item list-group-item-action" (click)="onAboutClick($event)">
+        About
+    </a>
 </div>
