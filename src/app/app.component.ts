@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
+import { PokemonService } from './core/services/pokemon.service';
 
 
 
@@ -6,13 +7,14 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [PokemonService]
 })
 export class AppComponent {
   title = 'Vapor_PokeDex';
   
   
-  constructor(){
+  constructor(private pokemonService: PokemonService){
   }
   
 }
