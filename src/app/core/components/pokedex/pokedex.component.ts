@@ -10,11 +10,11 @@ import { PokemonService } from '../../services/pokemon.service';
 export class PokedexComponent implements OnInit {
   selectedPokemon: Pokemon | undefined;
   constructor(private pokemonService: PokemonService) { 
-    let x=0;
+    
   }
 
   ngOnInit(): void {
-    let x = 0;
+    
   }
 
   pokemonSelected(pokemon: Pokemon){
