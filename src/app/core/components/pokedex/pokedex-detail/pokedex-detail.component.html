@@ -3,7 +3,7 @@
     <div class="col-sm-3">
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h1>{{ pokemon!.name.toUpperCase() }}</h1>
-            <img class="center" [src]="pokemon!.imageurl" height=251px; width=251px; alt="">
+            <img class="center" [src]="'../../assets/img/pokemons/' + pokemon!.id + '.png'" height=251px; width=251px; alt="">
             <span>{{pokemon!.height}} - {{pokemon!.weight}}</span>
         </div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
