@@ -60,7 +60,7 @@ export class PokeStatsComponent implements OnInit {
         ticks:{
           display:false
         },
-        max:120,
+        max:230,
         min:0,
         beginAtZero:true,
         pointLabels:{

@@ -7,7 +7,7 @@
             <div>
               <a [routerLink]="['../', pokemon.id]">{{pokemon.name}}</a>
             </div>
-            <img [routerLink]="['../', pokemon.id]" [src]="pokemon.imageurl" height=100px; widht=100px; alt="">
+            <img [routerLink]="['../', pokemon.id]" [src]="'../../assets/img/pokemons/' + pokemon.id + '.png'" height=100px; widht=100px; alt="">
             <div>
                 <span>Evolve By: <br />{{pokemon.evolution_cause}}</span>
             </div>

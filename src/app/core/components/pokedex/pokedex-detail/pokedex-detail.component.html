@@ -2,26 +2,26 @@
 <div class="row" *ngIf="pokemon">
     <div class="col-sm-3">
         <div class="row justify-content-center" style="text-align:center; color:white;">
-            <h1>{{ pokemon!.name.toUpperCase() }}</h1>
-            <img class="center" [src]="'../../assets/img/pokemons/' + pokemon!.id + '.png'" height=251px; width=251px; alt="">
-            <span>{{pokemon!.height}} - {{pokemon!.weight}}</span>
+            <h1>{{ pokemon.name.toUpperCase() }}</h1>
+            <img class="center" [src]="'../../assets/img/pokemons/' + pokemon.id + '.png'" height=251px; width=251px; alt="">
+            <span>{{pokemon.height}} - {{pokemon.weight}}</span>
         </div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Type</h3>
             <div>
-                <img width=30%; *ngFor="let type of pokemon!.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'" 
+                <img width=30%; *ngFor="let type of pokemon.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'" 
                 [routerLink]="['../../pokemons/filters', type]">
             </div>
         </div>
         <div class="row justify-content-center" style="height: 10px;"></div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Abilities</h3>
-            <span>{{pokemon!.abilities[0]}}</span>
+            <span>{{pokemon.abilities[0]}}</span>
         </div>
         <div class="row justify-content-center" style="height: 10px;"></div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>Weaknesses</h3>
-            <div *ngFor="let weakness of pokemon!.weaknesses">
+            <div *ngFor="let weakness of pokemon.weaknesses">
                 <img width=30%; [src]="'../../assets/img/types/' + weakness.toLowerCase() + '.png'" 
                 [routerLink]="['../../pokemons/filters', weakness]">
             </div>
@@ -29,24 +29,24 @@
         <div class="row justify-content-center" style="height: 10px;"></div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>EV Stats</h3>
-            <div *ngFor="let ev of pokemon!.ev">
+            <div *ngFor="let ev of pokemon.ev">
                 <span><b>{{ev.stat}}:</b> {{ev.ev_value}}</span>
             </div>
         </div>
         <div class="row justify-content-center" style="height: 10px;"></div>
         <div class="row justify-content-center" style="text-align:center; color:white;">
             <h3>PokeEgg</h3>
-            <div>Egg Groups: {{pokemon!.egg_groups}}</div>
-            <div>Hatch Time: {{pokemon!.hatch_time}}</div>
-            <div>Male %: {{pokemon!.male_percentage}}</div>
-            <div>Female %: {{pokemon!.female_percentage}}</div>
+            <div>Egg Groups: {{pokemon.egg_groups}}</div>
+            <div>Hatch Time: {{pokemon.hatch_time}}</div>
+            <div>Male %: {{pokemon.male_percentage}}</div>
+            <div>Female %: {{pokemon.female_percentage}}</div>
         </div>
     </div>
     <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
         <div class="row justify-content-center">
             <div class="col">
                 <select (change)="pokeDexVersionChange($event)" class="form-select">
-                    <option *ngFor="let pokeDex of pokemon!.description">{{pokeDex.version}}</option>
+                    <option *ngFor="let pokeDex of pokemon.description">{{pokeDex.version}}</option>
                 </select>
                 <br />
                 <p class="entry">{{ selectedPokedex?.entry }}</p>
@@ -60,7 +60,7 @@
         </div>
         <br />
         <div class="row justify-content-center">
-            <app-poke-catchrate [pokemon]="pokemon!"></app-poke-catchrate>
+            <app-poke-catchrate [pokemon]="pokemon"></app-poke-catchrate>
         </div>
     </div>
 </div>
