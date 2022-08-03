@@ -37,4 +37,14 @@ export class Pokemon{
         this.name = name;
         this.id = id;
     }
+
+    public GetEVStat(stat: string):EV{
+        var ev = this.ev.filter(ev => ev.stat === stat)[0];
+        if(ev){
+            return ev;
+        }
+        else{
+            return new EV(stat, 0);
+        }
+    }
 }
