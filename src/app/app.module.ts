@@ -13,13 +13,16 @@ import { DBConfig, NgxIndexedDBModule } from 'ngx-indexed-db';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from  '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { initializeApp } from "firebase/app";
 import { AngularFireModule } from "@angular/fire/compat";
 import { environment } from '../environments/environment';
 import { PokeStatsComponent } from './core/components/pokedex/pokedex-detail/poke-stats/poke-stats.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgChartsModule } from 'ng2-charts';
+import { MatCommonModule, MatOptionModule, MatOptionSelectionChange } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 import { PokeEvolutionsComponent } from './core/components/pokedex/pokedex-detail/poke-evolutions/poke-evolutions.component';
 import { PokedexComponent } from './core/components/pokedex/pokedex.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
@@ -36,6 +39,8 @@ import { PokeDexTypeFilterPipe } from './shared/pipes/pokedextypefilter.pipe';
 import { YouSureDialogComponent } from './shared/dialogs/you-sure-dialog/you-sure-dialog.component';
 import { EvTrainerComponent } from './core/components/ev-trainer/ev-trainer.component';
 import { BasicDialogComponent } from './shared/dialogs/basic-dialog/basic-dialog.component';
+import { PoketeamListComponent } from './core/components/team-builder/poketeam-list/poketeam-list.component';
+import { PoketeamMemberComponent } from './core/components/team-builder/poketeam-list/poketeam-member/poketeam-member.component';
 
 
 
@@ -57,7 +62,9 @@ import { BasicDialogComponent } from './shared/dialogs/basic-dialog/basic-dialog
     PokeCatchrateComponent,
     YouSureDialogComponent,
     BasicDialogComponent,
-    EvTrainerComponent
+    EvTrainerComponent,
+    PoketeamListComponent,
+    PoketeamMemberComponent
   ],
   imports: [
     FormsModule,
@@ -65,9 +72,14 @@ import { BasicDialogComponent } from './shared/dialogs/basic-dialog/basic-dialog
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatFormFieldModule,
     MatToolbarModule,
     MatButtonToggleModule,
+    MatCommonModule,
     MatDialogModule,
+    ReactiveFormsModule, 
+    MatOptionModule,
+    MatSelectModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'VaporDex'),
     NgChartsModule,
     AppRoutingModule,

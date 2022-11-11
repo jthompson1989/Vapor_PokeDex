@@ -1,1 +1,17 @@
-<p>team-builder works!</p>
+<div>
+    <div>
+        <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Pokemon</mat-label>
+            <mat-select #pokemonSelect>
+                <mat-option *ngFor="let pokemon of pokemons" [value]="pokemon">
+                <img [src]="pokemon.imageurl" height="40px" width="40px" />{{pokemon.name}}
+                </mat-option>
+            </mat-select>  
+        </mat-form-field>
+        <input type="button" value="Add" (click)="addPokemon()" />
+    </form>
+    </div>
+    
+    <app-poketeam-list></app-poketeam-list>
+</div>

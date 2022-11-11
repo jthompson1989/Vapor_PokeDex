@@ -17,10 +17,10 @@
     align-items: center;
     width: 100%;
     background-color: transparent;
-    
   }
   .toolbarNav button span {
     display: block;
+    color:white;
   }
 
   button:hover,

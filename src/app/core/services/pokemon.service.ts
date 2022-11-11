@@ -8,6 +8,8 @@ import { child, Database, get, getDatabase, ref } from "firebase/database";
 import { environment } from "src/environments/environment";
 import { Observable } from "rxjs";
 
+import * as _ from 'lodash';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -85,6 +87,16 @@ export class PokemonService{
         //   console.log("Pokemon Array:" + this.pokemonList);
         // });
         // return this.pokemonList;
+      }
+
+      getPokemonListOrderBy(sortProperty: string){
+        return this.dbService.getAll('pokemons').subscribe((pokemons) => {
+          this.pokemonList = []
+          for(let x = 0; x < pokemons.length; x++){
+              this.pokemonList.push(this.convertToPokemon(pokemons[x]));
+          }
+          return _.sortBy(this.pokemonList, [sortProperty]) as Pokemon[];
+        });
       }
 
       getPokemonData(id: string){

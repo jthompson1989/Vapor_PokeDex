@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-2">
+        <img [src]="pokemon?.imageurl" width="150px" height="150px" />
+    </div>
+    <div class="col-sm-2">
+        <div class="row">
+            <div class="col-sm-2">
+                <span class="pokeText" style="margin-top:50%; margin-bottom:30%;">{{pokemon?.name}}</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <img *ngFor="let type of pokemon?.type" [src]="'../../assets/img/types/' + type.toLowerCase() + '.png'" 
+                [routerLink]="['../../pokemons/filters', type]">
+            </div>
+        </div>
+    </div>
+</div>
